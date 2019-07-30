@@ -1,0 +1,108 @@
+/* general settings */
+body, html {
+min-height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* bio backgrounds */
+/* body {
+  background-image: url(../images/dana_bio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+} */
+
+body {
+  background-image: url(../images/alec_bio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Dana's bio settings */
+.bioDana h2 {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.7em;
+  color: white;
+  margin-left: 3%;
+  margin-top: 9%;
+}
+
+.bioDana h3 {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.7em;
+  color: #3a061b;
+  margin-left: 3%;
+  padding-top: 10px;
+}
+
+.bioDana p {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7em;
+  color: white;
+  margin-left: 4%;
+  padding-top: 20px;
+  padding-left: 4px;
+  width: 480px;
+  height: auto;
+}
+
+/* Alec's bio settings */
+.bioAlec h2 {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.7em;
+  color: white;
+  margin-left: 60%;
+  margin-top: 8%;
+}
+
+.bioAlec h3 {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.7em;
+  color: #678d9d;
+  margin-left: 60%;
+  padding-top: 10px;
+}
+
+.bioAlec p {
+  font-family: forma-djr-banner, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.7em;
+  color: white;
+  margin-left: 60%;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 510px;
+  height: auto;
+}
+
+/* Bio controls */
+.bio-controls {
+  color: white;
+  font-size: 2em;
+  margin-left: 50%;
+  margin-top: 10%; /* fix this after adding actual content*/
+}
+
+.fas {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.fas:hover {
+  color: rgba(255, 255, 255, .5);
+}
