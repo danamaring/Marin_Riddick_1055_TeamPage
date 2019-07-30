@@ -1,0 +1,74 @@
+/* general settings */
+.hidden {
+  display: none;
+}
+
+/* bio backgrounds */
+.bioDana {
+  background-image: url(../images/dana.bio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bioAlec {
+  background-image: url(../images/alec.bio.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+/* Dana's bio settings */
+.bioDana h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.9em;
+  color: white;
+  margin-top: 10%;
+  margin-left: 2%;
+}
+
+.bioDana h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: #3a061b;
+  margin-top: 10%;
+  margin-left: 2%;
+  padding-top: 10px;
+}
+
+.bioDana p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: white;
+  margin-top: 10%;
+  margin-left: 2%;
+  padding-top: 20px;
+  padding-left: 4px;
+}
+
+/* Alec's bio settings */
+.bioAlec h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.9em;
+  color: white;
+  margin-top: 10%;
+  margin-left: 60%;
+}
+
+.bioAlec h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: #678d9d;
+  margin-top: 10%;
+  margin-left: 60%;
+  padding-top: 10px;
+}
+
+.bioAlec p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  color: white;
+  margin-top: 10%;
+  margin-left: 60%;
+  padding-top: 20px;
+  padding-left: 4px;
+}
