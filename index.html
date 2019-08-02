@@ -1,52 +1,39 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>TEAM BIO PAGE</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.typekit.net/zwv4cen.css"> <!-- adobe fonts -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<link rel="stylesheet" href="https://use.typekit.net/zwv4cen.css"> <!-- adobe fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.css"> <!-- controls icons -->
-  </head>
-  <body>
-    <!-- DANA´S BIO ------->
-    <section class="bioDana">
-      <h3 class="hidden">DANA'S BIO</h3>
-      <h2>Dana Marin Garcia</h2>
-      <h3>Colima, Mexico</h3>
-      <p class="text-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. <br>
-        Duis aute irure dolor inreprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nullapariatur. Excepteur sint occaecat cupidatat
-        non proident, sunt in culpa qui officia deserunt mollit anim
-        id est laborum.
-      </p>
-    </section>
 
-    <!-- ALEC´S BIO ------->
-    <section class="bioAlec">
-      <h3 class="hidden">ALEC'S BIO</h3>
-      <h2>Alexander Riddick</h2>
-      <h3>Markdale, ON, Canada</h3>
-      <p class="text-container">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-        culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </section>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main.css">
 
-    <!-- BIO CONTROLS ------->
-    <section class="bio-controls">
-      <h2 class="hidden">BIO CONTROLS</h2>
-      <button class="fas fa-chevron-left" data-arrayref="0"></button>
-      <button class="fas fa-chevron-right" data-arrayref="1"></button>
-    </section>
+	<title>TEAM BIO PAGE</title>
+</head>
+<body id="danaImg">
+	<main>
+			<section id="bioDana">
+				<h2 class="hidden">DANA'S BIO</h2>
+				<h2>Dana Marin Garcia</h2>
+				<h3>Colima, Mexico</h3>
+				<p class="text-container"></p>
+			</section>
 
-  <script src="js/app.js"></script>
-  </body>
+			<section id="bioAlec">
+				<h2 class="hidden">ALEC'S BIO</h2>
+				<h2>Alec Riddick</h2>
+				<h3>Markdale, Canada</h3>
+				<p class="text-container">Lorem Ipsum</p>
+			</section>
+
+			<div class="bio-buttons">
+				<button class="fas fa-chevron-left" data-arrayref="0" id="bio-buttons-dana"></button>
+				<button class="fas fa-chevron-right" data-arrayref="1" id="bio-buttons-alec"></button>
+			</div>
+	</main>
+
+	<script src="js/main.js"></script>
+</body>
 </html>
