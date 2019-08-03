@@ -2,67 +2,51 @@
 	//this is a self invoking function
 	console.log('My JS issa workin!');
 
-	let textContainer = document.querySelector(".text-container"),
+	let nameOfPerson = document.querySelector(".name"),
+		subHead = document.querySelector(".birthplace");
+		textContainer = document.querySelector(".bio-paragraph");
 		textButton = document.querySelector("button");
 		bioButtons = document.querySelectorAll(".bio-buttons button");
-		alecButton = document.querySelector("#bio-buttons-alec");
-		danaButton = document.querySelector("#bio-buttons-dana");
 
 
 	const dataContainer = ["Welcome to Marin-Riddick Enterprises! "];
 	const newContainer = ["EXAMPLE"];
-	const danaAndAlec = ["Dana's Bio", "Alec R Bio"];
-	const bgImage = ["url(images/dana_bio.jpg)", "url(images/alec_bio.jpg)"] // not cheating here
+	const headerName = ["Dana Marin Garcia", "Alec Riddick"];
+	const birthPlace = ["Colima, Mexico", "Markdale, Ontario"];
+	const danaAndAlecContent = ["I was born in Colima, Mexico which is a very small city where everyone knows each other. I studied a Bachelor’s Degree in Education and in the last semester I won a scholarship to study English in Toronto for two months. After I finished my English studies and went back to Colima, I decided that I wanted to study something different related to design and programming in Canada and I found the IDP3 program in Fanshawe and the rest is history. Some of my hobbies are traveling, biking, cooking and of course designing.", "I grew up in Luke Skywalker’s house, on a farm with two and a half horses, and in a town with a population number under the view count of most YouTube videos. I attended Humber College for Advertising and Graphic Design and really loved the web design class. They got cut short because of the strike that happened and my colleagues at tbk Creative told me about this program at Fanshawe for web design so I decided to attend that same program. My hobbies include all things design, working out, skiing, and sailing."];
+	const bgImage = ["url(images/dana_bio_updated.jpg)", "url(images/alec_bio_updated.jpg)"];
 
-	function showBioInfo() {
+
+	function changeContent() {
 		arrayIndex = this.dataset.arrayref;
 
-		textContainer.textContent = danaAndAlec[arrayIndex];
+		nameOfPerson.textContent = headerName[arrayIndex];
+		subHead.textContent = birthPlace[arrayIndex];
+		textContainer.textContent = danaAndAlecContent[arrayIndex];
 	}
 
 	function changeImage() {
 		document.getElementById('danaImg').style.backgroundImage = bgImage[arrayIndex];
 	}
 
-
-	function changeContentA() { // CHEATING STARTS HERE
-		document.getElementById('bioAlec').style.display = "block";
-		document.getElementById('bioDana').style.display = "none";
-
-		console.log("Now Viewing: Alec");
-	}
-
-	function changeContentD() {
-		document.getElementById('bioAlec').style.display = "none";
-		document.getElementById('bioDana').style.display = "block";
-
-		console.log("Now Viewing: Dana");
-	}
-
-
-
 	function joinArray() {
 		textContainer.textContent = newContainer.join(" ");
 	}
 
-	// for as long as the number in dataContainer is greater than 0, add one to the index (i=index)
 	dataContainer.forEach((word, index) => {
 		textContainer.textContent += word;
 	})
 
-	// the exact same as above, just a newer version
 	for (let i=0; i<dataContainer.length; i++) {
 		console.log(i, dataContainer[i]);
 
-		// append (add) the array contents to the paragraph tag
 		textContainer.textContent = dataContainer[i];
 	}
 
-	textContainer.textContent += "Click the buttons below to see more people!"; // attribute: textContent
-	textButton.addEventListener("click", joinArray); //joinArray means take every element and put them all into one
-																									 //piece of text then adds a space that we told it to (brackets)
-	bioButtons.forEach(button => button.addEventListener("click", showBioInfo));
+	textContainer.textContent += "Click the buttons below to see more people!"; 
+	textButton.addEventListener("click", joinArray); 
+
+
+	bioButtons.forEach(button => button.addEventListener("click", changeContent));
 	bioButtons.forEach(button => button.addEventListener("click", changeImage));
-	bioButtons.forEach(button => alecButton.addEventListener("click", changeContentA)); // technically cheating
-	bioButtons.forEach(button => danaButton.addEventListener("click", changeContentD));
 })();
