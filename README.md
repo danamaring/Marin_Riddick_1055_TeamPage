@@ -1,19 +1,20 @@
-# This is an In-Class Example of What Trevor Wants README Files to Look Like
+# Project 4: Team Page
+Build a bio page for both members with the option of changing the content through JavaScript arrays.
 
-This is where you put a small description of what the project is.
 
 ## Description
 
-Explain brand history and a description of the project, very similar to above
+Create a Team Bio page based on your partners for the Integrated Project. You’ll
+have some standard team copy on the page initially; provide a way to click and
+change content for each team member.
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10, CSS3, HTML5
-* Be sure to prefix any bleeding-edge rules, tags, etc. (see [caniuse](https://caniuse.com/) for reference)
-* Also using lastest ES6/next, you should probably think about including [Babel](https://babeljs.io/) for transpilation (or an NPM Script)
+* HTML5
+* CSS3
+* JavaScript
 
 ### Installing
 
@@ -21,21 +22,17 @@ Explain brand history and a description of the project, very similar to above
 
 ## Authors
 
-Contributors names and contact info
-
 * Alec Riddick
 	* [Website](http://www.chroniclesofriddickdesign.com/)
 * Dana Marin Garcia
 
 ## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-* MIT is usually fine (research what this means)
+* MIT
 
 ## Acknowledgments
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
 * [README Formatting](https://guides.github.com/features/mastering-markdown/)
+* [Meyerweb CSS Reset](https://meyerweb.com/eric/tools/css/reset/)
 * Trevor Van Rys
